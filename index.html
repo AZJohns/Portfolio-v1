@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio Jonh Andrade</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Jonh Andrade</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRÍCULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <!-- <img src="img/perfil.png" alt="Foto de Jonh Andrade"> -->
+            </div>
+            <h1>JONH SEBASTIAN ANDRADE ZAPATA</h1>
+            <h2>Estudiante de Desarrollo de Aplicaciones Web</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/john-sebastian-andrade-zapata" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AZJohns" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre mi</h2>
+            <p><span>Hola, soy Jonh Andrade.</span> Soy estudiante de segundo año de Técnico Superior en Desarrollo de
+                Aplicaciones Web, con especialización en <span>Java, desarrollo frontend (HTML/CSS) y gestión de bases
+                    de
+                    datos</span>. Busco activamente una oportunidad de prácticas para aplicar mis conocimientos,
+                contribuir a
+                proyectos reales y continuar mi formación como desarrollador. Apasionado por la tecnología y con un
+                interés creciente en la ciberseguridad.</p>
+
+            <div class="fila">
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Teléfono</strong>
+                            604 262 159
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            andradezapatajohn@gmail.com
+                        </li>
+                        <li>
+                            <strong>Localidad</strong>
+                            Madrid, España
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-laptop-code"></i>
+                            <span>CODING</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span>CIBERSEGURIDAD</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LEER</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="botonCV"> <a download="CV_JonhAndrade" href="CV/Curriculum Jonh Andrade.pdf">
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </a>
+            </button>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL (SQL)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Git & GitHub</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Aprendizaje Rápido</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Atención al Detalle</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pensamiento Crítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Currículum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Técnico Superior en Desarrollo de Aplicaciones Web (DAW)</h4>
+                        <span class="casa">MEDAC: Formación Profesional, Madrid</span>
+                        <span class="fecha">2024 - Actualidad</span>
+                        <p>
+                        <ul>
+                            <li>Programación: Desarrollo backend con Java (POO, Estructuras de Datos, JDBC).</li>
+                            <li>Bases de Datos: Diseño, implementación y consulta de bases de datos relacionales
+                                (MySQL).</li>
+                            <li>Desarrollo Web: Maquetación con HTML5 y diseño responsive con CSS3.</li>
+                            <li>Sistemas y Ciberseguridad: Fundamentos de sistemas operativos y seguridad.</li>
+                        </ul>
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Máster Profesional en Ciberseguridad</h4>
+                        <span class="casa">MEDAC: Formación Profesional, Madrid</span>
+                        <span class="fecha">2024 - 2026 (Cursando)</span>
+                        <p>Ampliando conocimientos en el área de seguridad informática y protección de datos, en
+                            paralelo a mi formación como desarrollador.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Auxiliar de Control de Accesos</h4>
+                        <span class="casa">Teliman servicios complementarios, Madrid</span>
+                        <span class="fecha">Abril 2023 - Actualidad</span>
+                        <p>
+                        <ul>
+                            <li>Gestión y reporte de incidencias, asegurando una comunicación clara y eficiente.</li>
+                            <li>Aplicación de protocolos de seguridad y verificación de identidad, con alta atención al
+                                detalle.</li>
+                            <li>Supervisión de instalaciones para mitigar riesgos.</li>
+                            <li>Atención y recepción de personal y visitas.</li>
+                        </ul>
+                        </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portfolio</h2>
+            <p style="text-align: center; margin-bottom: 30px;">Mira algunos de mis proyectos</p>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/Imagen traductor.png" alt="Proyecto 1">
+                    <div class="overlay">
+                        <a href="https://azjohns.github.io/Google-Translate-/Google-Translate" target="_blank"
+                            style="color: white; text-decoration: none;">
+                            <h3>Google-Translate- </h3>
+                            <p>HTML, CSS y JavaScript</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Inicio_Rol_Admin.png " alt="Proyecto 2">
+                    <div class="overlay">
+                        <a href="https://github.com/AZJohns/GestionDeAutomoviles_y_Usuarios.git" target="_blank"
+                            style="color: white; text-decoration: none;">
+                            <h3>AutoMocion Manager - Gestión de Concesionario de Alta Gama</h3>
+                            <p>PHP, CSS</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/Pong-Galactico.png " alt="Proyecto 2">
+                    <div class="overlay">
+                        <a href="https://azjohns.github.io/Pong-Galactico/" target="_blank"
+                            style="color: white; text-decoration: none;">
+                            <h3>Pong-Galactico.</h3>
+                            <p>PHP, CSS</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="col">
+                    <form action="https://formspree.io/f/xzzqelqo" id="form-contacto" method="POST">
+
+                        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+
+                        <input type="text" name="telefono" placeholder="Número de teléfono">
+
+                        <input type="email" name="email" placeholder="Dirección de correo" required>
+
+                        <input type="text" name="asunto" placeholder="Tema">
+
+                        <textarea name="mensaje" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+
+                        <button type="submit">
+                            Enviar Mensaje <i class="fa-solid fa-paper-plane"></i>
+                            <span class="overlay"></span>
+                        </button>
+
+                    </form>
+                </div>
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Madrid, España
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llámame: 604 262 159
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: andradezapatajohn@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://www.linkedin.com/in/john-sebastian-andrade-zapata" target="_blank"><i
+                    class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/AZJohns" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <p>Jonh Sebastian Andrade Zapata - 2025 / 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
